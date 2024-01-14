@@ -95,6 +95,7 @@ class NewCommande extends Component
     }
 
     public function enregistrer(){
+        dd("ok");
        $commande = null;
         if( $this->dateLivraison == "" ){
             $commande = Commande::create([
@@ -112,7 +113,7 @@ class NewCommande extends Component
                 $dbRepas->nbr_dispo -= $repas["nbr"];
                 $dbRepas->save();
             }
-            
+            return redirect()->route('/');
         }
     }
 

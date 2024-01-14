@@ -45,7 +45,8 @@
             Total: <span class="text-lg font-bold">{{$total}}</span>
         </div>
         <div class="mt-4 flex justify-between">
-            <button class="transition ease-in-out px-2 py-1 border border-green-500 rounded bg-green-400 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-green-600 duration-300">Enregistrer</button>
+            <!-- wire:click="enregistrer" -->
+            <a href="/" class="transition ease-in-out px-2 py-1 border border-green-500 rounded bg-green-400 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-green-600 duration-300">Enregistrer</a>
             <button wire:click="vider" class="transition ease-in-out px-2 py-1 border border-red-500 rounded bg-red-400 hover:-translate-y-1 hover:scale-110 hover:text-white hover:bg-red-600 duration-300">Annuler</button>
         </div>
         <div></div>
